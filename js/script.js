@@ -8,15 +8,9 @@
 
 var j;
 function lottoRad() {
-	// init nums
-		for (var i=0; i<=6; i++) {
-		let lottery = 0;
-	 	document.getElementById ("lotto_" + i).innerHTML = lottery;
-	
-	// new nums
 	for (var i=0; i<=6; i++) {
-		j = Math.floor(Math.random() * 38)+1;
-		let lottery = j;
+		
+		let lottery = Math.floor(Math.random() * 38)+1;
 	 	document.getElementById ("lotto_" + i).innerHTML = lottery;
 	}
 	alert("lottoraden klar!");
